@@ -1,7 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background: #302C42;
+    border-radius: 70px;
+    width: 1440px;
+    height: 1024px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.logo-vr {
+    width: 102px;
+    height: 103px;
+    margin: 0 15px 0 70px;
+}
+
+.hydra {
+    width: 76px;
+    height: 46px;
+    margin-right: 205px;
+}
+
+.header-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+#contact-us {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding: 17px 34px;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #302C42;
+    margin-left: 140px;
+    margin-right: 38px;
+}
+
+#join {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #343045;
+    padding: 17px 34px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
 }
 
