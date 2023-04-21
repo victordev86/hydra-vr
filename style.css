@@ -77,7 +77,7 @@ header {
     opacity: 0.8;
 }
 
-#join:active{
+#join:active {
     opacity: 0.5;
 }
 
@@ -144,11 +144,11 @@ p {
     cursor: pointer;
 }
 
-#build:hover{
+#build:hover {
     opacity: 0.8;
 }
 
-#build:active{
+#build:active {
     opacity: 0.5;
 }
 
@@ -261,4 +261,100 @@ h5 {
 
 .email:active {
     color: #302C42;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    header {
+        display: block;
+        margin: 25px 0 0 20px;
+    }
+
+    .logo-vr {
+        width: 69px;
+        height: 59px;
+    }
+
+    .hydra {
+        width: 46px;
+        height: 28px;
+    }
+
+    .header-link {
+        display: none;
+    }
+
+    .button-header {
+        display: none;
+    }
+
+    main {
+        display: block;
+    }
+
+    .vr-mask {
+        display: block;
+        margin: 0 auto;
+        width: 318.67px;
+        height: 277.04px;
+        box-shadow: 0px 0px 10px 10px #0a0a0a3d;
+        border-radius: 60px 60px 67px 160px;
+    }
+
+    .left-section {
+        display: block;
+        position: absolute;
+        top: 320px;
+        width: 100%;
+    }
+
+    .right-section {
+        display: block;
+    }
+
+    h1 {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 44px;
+        text-align: center;
+        width: auto;
+    }
+
+    span {
+        font-size: 32px;
+    }
+
+    h2 {
+        display: block;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        width: auto;
+        margin: 5px 0 30px 0;
+    }
+
+    p {
+        display: none;
+    }
+
+    #build {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }
