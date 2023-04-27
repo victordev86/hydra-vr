@@ -59,7 +59,17 @@ header {
     background-color: #302C42;
     margin-left: 130px;
     margin-right: 38px;
+    box-shadow: 0px 3px 8px black;
+    border: none;
     cursor: pointer;
+}
+
+#contact-us:hover {
+    background-color: #58536d;
+}
+
+#contact-us:active {
+    background-color: #827a9e;
 }
 
 #join {
@@ -70,6 +80,8 @@ header {
     padding: 17px 34px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
+    box-shadow: 0px 3px 8px black;
+    border: none;
     cursor: pointer;
 }
 
@@ -140,7 +152,9 @@ p {
     color: #343045;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
+    box-shadow: 0px 3px 8px black;
     padding: 17px 43px;
+    border: none;
     cursor: pointer;
 }
 
@@ -263,6 +277,22 @@ h5 {
     color: #302C42;
 }
 
+.menu-mobile {
+    display: none;
+}
+
+.rectangle-mobile {
+    display: none;
+}
+
+.circle-left {
+    display: none;
+}
+
+.circle-right {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
 
     .container {
@@ -272,7 +302,7 @@ h5 {
     }
 
     header {
-        display: block;
+        display: flex;
         margin: 25px 0 0 20px;
     }
 
@@ -284,6 +314,7 @@ h5 {
     .hydra {
         width: 46px;
         height: 28px;
+        margin: 0;
     }
 
     .header-link {
@@ -294,6 +325,13 @@ h5 {
         display: none;
     }
 
+    .menu-mobile {
+        display: inline-block;
+        position: relative;
+        margin: 0 20px 0 202px;
+        cursor: pointer;
+    }
+
     main {
         display: block;
     }
@@ -301,8 +339,8 @@ h5 {
     .vr-mask {
         display: block;
         margin: 0 auto;
-        width: 318.67px;
-        height: 277.04px;
+        width: 315.67px;
+        height: 273.04px;
         box-shadow: 0px 0px 10px 10px #0a0a0a3d;
         border-radius: 60px 60px 67px 160px;
     }
@@ -310,7 +348,7 @@ h5 {
     .left-section {
         display: block;
         position: absolute;
-        top: 320px;
+        top: 300px;
         width: 100%;
     }
 
@@ -321,21 +359,21 @@ h5 {
     h1 {
         display: block;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 44px;
+        font-size: 22px;
+        line-height: 42px;
         text-align: center;
         width: auto;
     }
 
     span {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     h2 {
         display: block;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 29px;
+        font-size: 21px;
+        line-height: 22px;
         text-align: center;
         width: auto;
         margin: 5px 0 30px 0;
@@ -348,6 +386,9 @@ h5 {
     #build {
         display: block;
         margin: 0 auto;
+        padding: 17px 70px;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .arrow {
@@ -355,6 +396,77 @@ h5 {
     }
 
     footer {
+        display: flex;
+        position: relative;
+        top: 250px;
+    }
+
+    .location-img {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .box-location {
+        display: block;
+        width: 195px;
+        margin-right: 15px;
+    }
+
+    h3 {
         display: none;
     }
+
+    .address {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        width: 195px;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .contacts {
+        display: flex;
+    }
+
+    .phone-img {
+        display: none;
+    }
+
+    .box-phone {
+        display: none;
+    }
+
+    .email-img {
+        display: none;
+    }
+
+    .box-email {
+        display: none;
+    }
+
+    .rectangle-mobile {
+        display: block;
+        height: 100px;
+        width: 350px;
+        position: relative;
+        top: 5px;
+    }
+
+    .circle-left {
+        display: block;
+        position: absolute;
+        left: 45px;
+    }
+
+    .circle-right {
+        display: block;
+        position: absolute;
+        right: 45px;
+    }
+
 }
