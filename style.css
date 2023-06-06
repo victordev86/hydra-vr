@@ -17,8 +17,14 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-vr {
@@ -30,10 +36,6 @@ header {
 .hydra {
     width: 76px;
     height: 46px;
-}
-
-nav {
-    margin: 0 auto;
 }
 
 .header-link {
@@ -103,13 +105,10 @@ main {
 }
 
 .left-section {
-    width: 50%;
-    display: inline-block;
-}
-
-.right-section {
     width: auto;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 h1 {
@@ -176,9 +175,16 @@ p {
     cursor: pointer;
 }
 
+.right-section {
+    width: auto;
+    display: inline-block;
+}
+
 .vr-mask {
-    width: 490px;
-    height: 426px;
+    width: 90%;
+    height: 90%;
+    margin: 0 0 0 auto;
+    display: block;
 }
 
 footer {
