@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    margin: 35px 75px;
+    margin: 20px 75px;
 }
 
 header {
@@ -81,7 +81,8 @@ header {
     padding: 17px 34px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.589));    border: none;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.589));
+    border: none;
     cursor: pointer;
 }
 
@@ -155,7 +156,8 @@ p {
     color: #343045;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.589));    padding: 17px 43px;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.589));
+    padding: 17px 43px;
     border: none;
     cursor: pointer;
 }
@@ -194,16 +196,24 @@ footer {
     align-items: center;
 }
 
+.rectangle {
+    width: 100%;
+    max-width: 1150px;
+    z-index: 1;
+}
+
 .contacts {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: 2;
 }
 
 .location-img {
     width: 70px;
     height: 70px;
+    margin-left: 25px;
 }
 
 .box-location {
@@ -228,11 +238,11 @@ h3 {
 .phone-img {
     width: 59px;
     height: 59px;
-    margin: 0px 10px 0 90px;
+    margin: 0px 10px 0 30px;
 }
 
 .box-phone {
-    width: 290px;
+    width: 200px;
 }
 
 h4 {
@@ -253,6 +263,7 @@ h4 {
 .email-img {
     width: 65px;
     height: 65px;
+    margin: 0px 5px 0 0px;
 }
 
 .box-email {
@@ -309,12 +320,14 @@ h5 {
 
     header {
         display: flex;
-        margin: 25px 0 0 20px;
+        margin: 15px 20px 0 20px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo-vr {
-        width: 69px;
-        height: 59px;
+        width: 45px;
+        height: 45px;
     }
 
     .hydra {
@@ -323,8 +336,19 @@ h5 {
         margin: 0;
     }
 
+    nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        z-index: 2;
+    }
+
     .header-link {
-        display: none;
+        display: block;
+        margin-bottom: 8px;
     }
 
     .button-header {
@@ -334,12 +358,13 @@ h5 {
     .menu-mobile {
         display: inline-block;
         position: relative;
-        margin: 0 20px 0 202px;
         cursor: pointer;
     }
 
     main {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 55px;
     }
 
     .vr-mask {
@@ -353,9 +378,7 @@ h5 {
 
     .left-section {
         display: block;
-        position: absolute;
-        top: 300px;
-        width: 100%;
+        margin-top: 15px;
     }
 
     .right-section {
@@ -404,7 +427,6 @@ h5 {
     footer {
         display: flex;
         position: relative;
-        top: 250px;
     }
 
     .location-img {
