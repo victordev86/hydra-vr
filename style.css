@@ -344,8 +344,8 @@ h5 {
         flex-direction: column;
         align-items: end;
         z-index: 2;
-        max-height: 0;
         overflow: hidden;
+        transition: all 0.4s ease-in-out;
     }
 
     .header-link {
@@ -417,7 +417,7 @@ h5 {
     #build {
         display: block;
         margin: 0 auto;
-        padding: 17px 70px;
+        padding: 15px 60px;
         font-size: 14px;
         line-height: 17px;
     }
@@ -428,13 +428,50 @@ h5 {
 
     footer {
         display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         position: relative;
     }
 
+    .rectangle {
+        display: none;
+    }
+
+    .rectangle-mobile {
+        display: flex;
+        height: 100px;
+        width: 85%;
+        position: relative;
+    }
+
+    .circle-left {
+        display: flex;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .circle-right{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .contacts {
+        display: flex;
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+    }
+    
     .location-img {
         display: block;
         width: 50px;
         height: 50px;
+        margin: auto;
     }
 
     .box-location {
@@ -455,14 +492,6 @@ h5 {
         width: 195px;
     }
 
-    .rectangle {
-        display: none;
-    }
-
-    .contacts {
-        display: flex;
-    }
-
     .phone-img {
         display: none;
     }
@@ -478,25 +507,4 @@ h5 {
     .box-email {
         display: none;
     }
-
-    .rectangle-mobile {
-        display: block;
-        height: 100px;
-        width: 350px;
-        position: relative;
-        top: 5px;
-    }
-
-    .circle-left {
-        display: block;
-        position: absolute;
-        left: 45px;
-    }
-
-    .circle-right {
-        display: block;
-        position: absolute;
-        right: 45px;
-    }
-
 }
