@@ -210,6 +210,11 @@ footer {
     z-index: 2;
 }
 
+.content{
+    display: flex;
+    align-items: center;
+}
+
 .location-img {
     width: 70px;
     height: 70px;
